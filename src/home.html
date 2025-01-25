@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show do Milhão</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="carregar()">
+    <div class="container">        
+        <div class="title">
+            <img class="logo" src="img/Jogodomilhao1999.webp">
+        </div>
+        <div class="question">Qual é a capital do Brasil?</div>
+        <ul class="options" id="opcoes">
+            <li class="option">A) São Paulo</li>
+            <li class="option">B) Brasília</li>
+            <li class="option">C) Rio de Janeiro</li>
+            <li class="option">D) Salvador</li>
+        </ul>
+        <hr>
+        <div>            
+            <div class="btn option" id="btnSeguir" onclick="proximo();">Seguir</div>
+            <div class="btn option" style="display: none;" id="btnRecomecar" onclick="location.reload();">Recomeçar</div>
+            <span id="resultado"></span>
+            <div class="placar" id="placar">
+                Placar<br>
+                <span >                    
+                    <span valor="0" id="premio">0,00</span>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
